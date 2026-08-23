@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guest Post Editor — write, format, and generate clean HTML for Blogger guest posts.">
+  <meta name="theme-color" content="#4f6ef7">
+  <title>Guest Post Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Page shell */
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: #eef1f8;
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1e293b;
+    }
+    .page-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 16px 60px;
+    }
+    .page-header {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .page-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 6px;
+      color: #0f172a;
+    }
+    .page-header p {
+      margin: 0 0 20px;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+    .instructions {
+      background: #fff;
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid #e0e5f0;
+    }
+    .instructions h2 {
+      font-size: 1.25rem;
+      margin: 0 0 12px;
+      color: #0f172a;
+    }
+    .instructions ol.steps {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px;
+    }
+    .instructions ol.steps li {
+      position: relative;
+      padding: 10px 12px 10px 48px;
+      margin-bottom: 8px;
+      background: #f0fdf4;
+      border-radius: 10px;
+      border: 1px solid #bbf7d0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .instructions ol.steps li::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      background: #14b8a6;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+    }
+    .instructions .alert.outline {
+      background: transparent;
+      border: 2px dashed #fb923c;
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: #9a3412;
+      margin: 12px 0;
+    }
+    .instructions ul {
+      margin: 8px 0 0;
+      padding-left: 1.25rem;
+      color: #475569;
+    }
+    .instructions ul li { margin-bottom: 4px; }
+    .footer-note {
+      text-align: center;
+      margin-top: 28px;
+      padding: 16px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .footer-note a.button.ln {
+      display: inline-block;
+      padding: 10px 22px;
+      background: transparent;
+      color: #4f6ef7 !important;
+      border: 2px solid #4f6ef7;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .footer-note a.button.ln:hover {
+      background: #eef2ff;
+    }
+    .footer-note .alert.outline {
+      display: inline-block;
+      background: transparent;
+      border: 2px dashed #fb923c;
+      border-radius: 10px;
+      padding: 10px 16px;
+      color: #9a3412;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="page-header">
+      <h1>Guest Post Editor</h1>
+      <p>Write, format, and generate clean HTML for Blogger guest posts</p>
+    </div>
+
+    <div class="instructions">
+<h2>How to Submit a Guest Post</h2>
+
+<p>Follow these simple steps:</p>
+
+<ol class="steps">
+  <li>Open the Guest Post Editor on this page.</li>
+  <li>Type your article title in the <strong>Post Title (H1)</strong> box at the top.</li>
+  <li>Write your content in the large text box below. Use the toolbar to format text (Bold, Italic, Headings, Links, Quotes, Notes, etc.).</li>
+  <li>To insert special elements (Image, Table, YouTube, Author Card, Steps, FAQ, etc.), click the matching button on the toolbar and fill in the details.</li>
+  <li>You can move any inserted block up or down using the ↑ ↓ arrows that appear when you hover over it, or delete it with the ✕ button.</li>
+  <li>Once your post looks good, click the <strong>Generate HTML</strong> button.</li>
+  <li>Click the <strong>Copy HTML</strong> button to copy the complete code.</li>
+  <li>Paste the copied HTML into an email and send it to: <strong>mushahidsyed1994.guestposting@blogger.com</strong></li>
+</ol>
+
+<p class="alert outline"><b>Important:</b> Don’t click H2 or any formatting button when no text is selected — it will only generate extra empty code.</p>
+
+<p><strong>Quick Tips:</strong></p>
+
+<ul>
+  <li>Make sure the title is clear and the content is well-formatted.</li>
+  <li>Use the live editor to check how everything looks before generating the code.</li>
+  <li>Only send the generated HTML — no need to send screenshots or Word files.</li>
+</ul>
+    </div>
+
+<style>.be-root,.be-root *{box-sizing:border-box;margin:0;padding:0}.be-root{--be-bg:#f4f6fb;--be-surface:#ffffff;--be-border:#e0e5f0;--be-text:#1e293b;--be-muted:#64748b;--be-accent:#4f6ef7;--be-accent-soft:#eef2ff;--be-danger:#ef4444;--be-radius:14px;--be-shadow:0 4px 24px rgba(79,110,247,0.09);--be-font:'Inter',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;font-family:var(--be-font);color:var(--be-text);background:var(--be-bg);border-radius:18px;overflow:hidden;box-shadow:0 12px 48px rgb(0 0 0 / .07);max-width:940px;margin:24px auto;position:relative;line-height:1.55;font-size:15px}.be-root.be-fullscreen{position:fixed;inset:0;max-width:none;margin:0;border-radius:0;z-index:99999;height:100vh;display:flex;flex-direction:column}.be-header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:16px 20px;background:var(--be-surface);border-bottom:1px solid var(--be-border)}.be-title{flex:1;min-width:200px;border:1.5px solid var(--be-border);border-radius:11px;padding:11px 16px;font-size:1.18rem;font-weight:600;color:var(--be-text);background:#fafbff;outline:none;transition:border-color .2s,box-shadow .2s}.be-title:focus{border-color:var(--be-accent);box-shadow:0 0 0 4px var(--be-accent-soft)}.be-actions{display:flex;gap:8px;flex-wrap:wrap}.be-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border:1.5px solid var(--be-border);border-radius:10px;background:#fff;color:var(--be-text);font-size:13.5px;font-weight:550;cursor:pointer;transition:all .18s;white-space:nowrap;font-family:inherit}.be-btn:hover{background:var(--be-accent-soft);border-color:var(--be-accent);color:var(--be-accent)}.be-btn.primary{background:var(--be-accent)!important;color:#fff!important;border-color:var(--be-accent)!important}.be-btn.primary:hover{background:#3b5bdb!important;color:#fff!important}.be-btn.danger:hover{background:#fef2f2;border-color:var(--be-danger);color:var(--be-danger)}.be-btn svg{width:16px;height:16px;flex-shrink:0}.be-toolbar{display:flex;flex-wrap:wrap;gap:3px;padding:11px 14px;background:linear-gradient(180deg,#eef1f8 0%,#e8ecf6 100%);border-bottom:1px solid var(--be-border);position:sticky;top:0;z-index:20}.be-tool{min-width:36px;height:34px;padding:0 8px;display:inline-flex;align-items:center;justify-content:center;border:none;border-radius:8px;background:#fff0;cursor:pointer;transition:all .15s;position:relative;font-size:12px;font-weight:650;letter-spacing:.01em;font-family:inherit;white-space:nowrap}.be-tool:hover,.be-tool.active{background:var(--be-surface);box-shadow:0 2px 8px rgb(0 0 0 / .07);transform:translateY(-1px)}.be-tool .be-tip{display:none;position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);background:#0f172a;color:#fff;font-size:11px;padding:4px 9px;border-radius:5px;white-space:nowrap;z-index:40;pointer-events:none;box-shadow:0 4px 12px rgb(0 0 0 / .2)}.be-tool:hover .be-tip{display:block}.be-sep{width:1px;height:22px;background:#cdd3e4;margin:0 5px;align-self:center}.be-tool[data-cmd="bold"]{color:#1e293b}.be-tool[data-cmd="italic"]{color:#475569}.be-tool[data-insert="h2"]{color:#4f46e5}.be-tool[data-insert="h3"]{color:#7c3aed}.be-tool[data-insert="quote"]{color:#0ea5e9}.be-tool[data-insert="quote1"]{color:#06b6d4}.be-tool[data-insert="quote2"]{color:#14b8a6}.be-tool[data-insert="indent"]{color:#64748b}.be-tool[data-insert="dropcap"]{color:#f59e0b}.be-tool[data-modal="image"]{color:#10b981}.be-tool[data-modal="gallery"]{color:#059669}.be-tool[data-modal="link"]{color:#3b82f6}.be-tool[data-modal="button"]{color:#6366f1}.be-tool[data-modal="buttonln"]{color:#8b5cf6}.be-tool[data-modal="note"]{color:#0ea5e9}.be-tool[data-modal="alert"]{color:#f97316}.be-tool[data-modal="table"]{color:#64748b}.be-tool[data-modal="steps"]{color:#14b8a6}.be-tool[data-modal="accordion"]{color:#a855f7}.be-tool[data-modal="faq"]{color:#d946ef}.be-tool[data-modal="youtube"]{color:#ef4444}.be-tool[data-modal="author"]{color:#ec4899}.be-tool[data-modal="ppt"]{color:#8b5cf6}.be-editor-wrap{flex:1;overflow:auto;padding:20px;background:var(--be-bg)}.be-editor{min-height:420px;background:var(--be-surface);border-radius:var(--be-radius);padding:32px 36px;box-shadow:var(--be-shadow);outline:none;font-size:1.06rem;line-height:1.8;color:var(--be-text)}.be-editor:empty:before{content:attr(data-placeholder);color:#94a3b8;pointer-events:none}.be-editor p{margin:0 0 1.05em}.be-editor h2{font-size:1.6rem;font-weight:700;margin:1.5em 0 .55em;color:#0f172a}.be-editor h3{font-size:1.28rem;font-weight:650;margin:1.3em 0 .45em;color:#1e293b}.be-editor blockquote{margin:1.3em 0;padding:16px 22px;border-left:4px solid var(--be-accent);background:#f8faff;border-radius:0 12px 12px 0;color:#334155}.be-editor blockquote span{display:block;margin-top:10px;font-size:.86rem;color:var(--be-muted);font-style:italic}.be-editor .pIndent{text-indent:2.2em}.be-editor .dropCap{float:left;font-size:3.4em;line-height:.78;margin:.04em .14em 0 0;font-weight:700;color:var(--be-accent)}.be-editor a.button,.be-block-live a.button{display:inline-block;padding:12px 28px;background:#4f6ef7;color:#fff!important;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;border:none;box-shadow:0 4px 14px rgb(79 110 247 / .35);transition:transform .15s,box-shadow .15s}.be-editor a.button.ln,.be-block-live a.button.ln{background:#fff0;color:#4f6ef7!important;border:2px solid #4f6ef7;box-shadow:none}.be-editor a.extL,.be-block-live a.extL{color:#3b82f6;text-decoration:underline;font-weight:500}.be-editor p.note,.be-block-live p.note{background:#e0f2fe;border-left:4px solid #0ea5e9;padding:14px 18px;border-radius:0 10px 10px 0;color:#0c4a6e}.be-editor .alert,.be-block-live .alert{background:#fff7ed;border:1.5px solid #fb923c;border-radius:10px;padding:14px 18px;color:#9a3412}.be-editor .alert.outline,.be-block-live .alert.outline{background:#fff0;border:2px dashed #fb923c}.be-editor .alert.info,.be-block-live .alert.info{background:#eff6ff;border-color:#3b82f6;color:#1e40af}.be-editor .table,.be-block-live .table{overflow-x:auto;margin:1em 0}.be-editor .table table,.be-block-live .table table{width:100%;border-collapse:collapse;font-size:.95rem}.be-editor .table th,.be-block-live .table th{background:#eef2ff;padding:10px 14px;text-align:left;border:1px solid #c7d2fe;font-weight:650}.be-editor .table td,.be-block-live .table td{padding:10px 14px;border:1px solid #e2e8f0}.be-editor .table tr:nth-child(even) td,.be-block-live .table tr:nth-child(even) td{background:#f8fafc}.be-editor ol.steps,.be-block-live ol.steps{counter-reset:step;list-style:none;padding:0}.be-editor ol.steps li,.be-block-live ol.steps li{position:relative;padding:12px 12px 12px 52px;margin-bottom:10px;background:#f0fdf4;border-radius:10px;border:1px solid #bbf7d0}.be-editor ol.steps li::before,.be-block-live ol.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:12px;top:50%;transform:translateY(-50%);width:28px;height:28px;background:#14b8a6;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}.be-editor details.ac,.be-block-live details.ac{border:1.5px solid #e2e8f0;border-radius:10px;margin-bottom:8px;overflow:hidden}.be-editor details.ac summary,.be-block-live details.ac summary{padding:12px 16px;background:#f8fafc;cursor:pointer;font-weight:600;list-style:none}.be-editor details.ac summary::-webkit-details-marker{display:none}.be-editor details.ac[open] summary,.be-block-live details.ac[open] summary{background:#f0f4ff;border-bottom:1px solid #e2e8f0}.be-editor details.ac>div,.be-block-live details.ac>div{padding:14px 16px}.be-editor img.full,.be-block-live img.full{max-width:100%;height:auto;border-radius:10px;display:block;margin:.5em 0}.be-editor .psImg,.be-block-live .psImg{display:flex;flex-wrap:wrap;gap:8px}.be-editor .psImg img,.be-block-live .psImg img{max-width:140px;border-radius:8px}.be-editor .lazyYt,.be-block-live .lazyYt{background:#0f172a;color:#fff;padding:40px 20px;text-align:center;border-radius:12px;font-size:.9rem}.be-editor .lazyYt::before{content:"▶ YouTube:" attr(data-embed)}.be-editor .be-ppt-preview{display:flex;gap:10px;overflow-x:auto;padding:8px 0;scrollbar-width:thin}.be-editor .be-ppt-preview .slide{flex:0 0 160px;background:#f1f5f9;border-radius:10px;overflow:hidden;border:1.5px solid #e2e8f0}.be-editor .be-ppt-preview .slide img{width:100%;height:100px;object-fit:cover;display:block}.be-editor .be-ppt-preview .slide span{display:block;padding:6px 8px;font-size:11px;color:#64748b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.be-editor .mc-about-card{display:flex;gap:20px;align-items:flex-start;background:#fff;padding:20px;border-radius:14px;box-shadow:0 4px 16px rgb(0 0 0 / .06);border:1px solid #e8ecf4}.be-editor .mc-about-left{display:flex;flex-direction:column;align-items:center;gap:12px;flex-shrink:0}.be-editor .mc-about-img{width:90px!important;height:90px!important;border-radius:50%!important;object-fit:cover!important}.be-editor .mc-newsletter-btn{display:inline-block;padding:8px 16px;background:#fff;color:#222!important;border:1px solid #d9d9d9;border-radius:999px;font-size:.72rem;font-weight:600;text-decoration:none}.be-editor .mc-about-text h2{font-size:1.25rem;margin-bottom:2px}.be-editor .mc-tagline{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:10px}.be-editor .Label-1{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.be-editor .Label-1 a{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgb(155 170 175 / .12);color:#555}.be-editor .Label-1 svg{width:16px;height:16px}.be-block{position:relative;margin:1.6em 0;padding:14px 14px 12px;border:1.5px dashed #c7d0e6;border-radius:14px;background:#f8faff;contenteditable:false;user-select:none;transition:border-color .15s,background .15s}.be-block:hover{border-color:var(--be-accent);background:#f0f4ff}.be-block-controls{position:absolute;top:8px;right:8px;display:flex;gap:5px;opacity:0;transition:opacity .15s;z-index:10}.be-block:hover .be-block-controls{opacity:1}.be-block-controls button{width:30px;height:30px;border:none;border-radius:8px;background:#fff;color:var(--be-muted);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgb(0 0 0 / .12);font-size:14px;font-weight:600}.be-block-controls button:hover{color:var(--be-accent)}.be-block-controls button[data-del]:hover{color:var(--be-danger)}.be-block-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--be-accent);margin-bottom:10px;padding-left:2px}.be-block-live{pointer-events:none}.be-citations{padding:0 20px 20px}.be-citations label{display:block;font-size:12px;font-weight:650;color:var(--be-muted);margin-bottom:7px;text-transform:uppercase;letter-spacing:.05em}.be-cite-editor{background:var(--be-surface);border:1.5px solid var(--be-border);border-radius:11px;padding:14px 16px;min-height:70px;outline:none;font-size:.96rem;color:var(--be-text)}.be-cite-editor:empty:before{content:"Works Cited entries (one per line)";color:#94a3b8}.be-output{padding:0 20px 20px;display:none}.be-output.show{display:block}.be-output textarea{width:100%;min-height:200px;border:1.5px solid var(--be-border);border-radius:11px;padding:16px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;line-height:1.55;resize:vertical;background:#0f172a;color:#e2e8f0}.be-modal-overlay{display:none;position:fixed;inset:0;background:rgb(15 23 42 / .6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:100000;align-items:center;justify-content:center;padding:20px}.be-modal-overlay.open{display:flex}.be-modal{background:#fff;border-radius:18px;width:100%;max-width:580px;max-height:90vh;box-shadow:0 25px 80px rgb(0 0 0 / .32);animation:be-pop .25s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column;overflow:hidden}@keyframes be-pop{from{transform:scale(.94) translateY(12px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}.be-modal-header{display:flex;align-items:center;justify-content:space-between;padding:18px 22px;border-bottom:1px solid #e8ecf4;background:#fafbff;flex-shrink:0}.be-modal-header h3{font-size:1.15rem;font-weight:650;color:#0f172a;margin:0}.be-modal-close{width:34px;height:34px;border:none;background:#f1f5f9;border-radius:9px;cursor:pointer;color:#64748b;font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;transition:all .15s}.be-modal-close:hover{background:#e2e8f0;color:#0f172a}.be-modal-body{padding:20px 22px;overflow-y:auto;flex:1 1 auto;background:#fff;min-height:0}.be-field{margin-bottom:15px}.be-field label{display:block;font-size:12px;font-weight:650;color:#64748b;margin-bottom:6px;text-transform:uppercase;letter-spacing:.04em}.be-field input,.be-field textarea,.be-field select{width:100%;border:1.5px solid #e2e8f0;border-radius:10px;padding:11px 14px;font-size:14.5px;outline:none;transition:border-color .15s,box-shadow .15s;font-family:inherit;background:#fafbff;color:#1e293b}.be-field input:focus,.be-field textarea:focus,.be-field select:focus{border-color:var(--be-accent);box-shadow:0 0 0 3px var(--be-accent-soft);background:#fff}.be-field textarea{min-height:90px;resize:vertical}.be-modal-footer{padding:16px 22px;border-top:1px solid #e8ecf4;background:#fafbff;display:flex;justify-content:flex-end;gap:12px;flex-shrink:0}.be-modal-footer .be-btn{min-width:100px;justify-content:center}.be-slide-list,.be-faq-list{max-height:280px;overflow-y:auto;margin-bottom:12px;border:1.5px solid #e2e8f0;border-radius:10px;background:#f8fafc}.be-slide-item,.be-faq-item{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-bottom:1px solid #e8ecf4;font-size:13.5px;flex-wrap:wrap}.be-slide-item:last-child,.be-faq-item:last-child{border-bottom:none}.be-slide-item input,.be-faq-item input,.be-faq-item textarea{flex:1;border:1px solid #e2e8f0;border-radius:7px;padding:7px 10px;font-size:13px;background:#fff;min-width:0}.be-faq-item textarea{min-height:48px;resize:vertical;width:100%}.be-slide-item button,.be-faq-item button{border:none;background:#fee2e2;color:#ef4444;cursor:pointer;font-size:16px;width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0}.be-slide-item button:hover,.be-faq-item button:hover{background:#fecaca}.be-faq-item .be-faq-q{width:100%;margin-bottom:4px}.be-faq-item .be-faq-a{width:100%}.be-toast{position:fixed;bottom:32px;left:50%;transform:translateX(-50%) translateY(24px);background:#0f172a;color:#fff;padding:12px 24px;border-radius:999px;font-size:13.5px;font-weight:500;opacity:0;pointer-events:none;transition:all .28s;z-index:100001;box-shadow:0 8px 24px rgb(0 0 0 / .25)}.be-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}@media (max-width:640px){.be-root{margin:10px;border-radius:14px}.be-header{flex-direction:column;align-items:stretch}.be-actions{justify-content:flex-end}.be-editor{padding:20px 16px}.be-toolbar{padding:8px;gap:2px}.be-tool{min-width:32px;height:32px;padding:0 6px;font-size:11px}.be-modal{max-width:100%;border-radius:16px 16px 0 0;max-height:85vh}}</style>
+
+<div class="be-root" id="be-root"><div class="be-header"><input type="text" class="be-title" id="be-title" placeholder="Post Title Here" spellcheck="true"><div class="be-actions"><button class="be-btn" id="be-fs" title="Distraction-free writing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/></svg> Full </button><button class="be-btn danger" id="be-reset" title="Reset everything & clear storage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1018 0 9 9 0 00-18 0z"/><path d="M9 9l6 6M15 9l-6 6"/></svg> Reset </button><button class="be-btn primary" id="be-generate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg> Generate </button><button class="be-btn" id="be-copy" style="display:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copy </button></div></div><div class="be-toolbar" id="be-toolbar"><button class="be-tool" data-cmd="bold" title="Bold">B<span class="be-tip">Bold &lt;b&gt;</span></button><button class="be-tool" data-cmd="italic" title="Italic">I<span class="be-tip">Italic &lt;i&gt;</span></button><div class="be-sep"></div><button class="be-tool" data-insert="h2" title="Heading 2">H2<span class="be-tip">H2</span></button><button class="be-tool" data-insert="h3" title="Heading 3">H3<span class="be-tip">H3</span></button><div class="be-sep"></div><button class="be-tool" data-insert="quote" title="Standard Quote">Q<span class="be-tip">Quote</span></button><button class="be-tool" data-insert="quote1" title="Quote Style 1">Q1<span class="be-tip">Quote s1</span></button><button class="be-tool" data-insert="quote2" title="Quote Style 2">Q2<span class="be-tip">Quote s2</span></button><div class="be-sep"></div><button class="be-tool" data-insert="indent" title="Indent paragraph (toggle)">In<span class="be-tip">Indent (toggle)</span></button><button class="be-tool" data-insert="dropcap" title="Drop Cap">DC<span class="be-tip">Drop Cap</span></button><div class="be-sep"></div><button class="be-tool" data-modal="image" title="Standard Image">Img<span class="be-tip">Image</span></button><button class="be-tool" data-modal="gallery" title="Show-All Images">Gal<span class="be-tip">Gallery</span></button><button class="be-tool" data-modal="link" title="External Link">Link<span class="be-tip">Ext Link</span></button><button class="be-tool" data-modal="button" title="Button">Btn<span class="be-tip">Button</span></button><button class="be-tool" data-modal="buttonln" title="Outlined Button">BtnO<span class="be-tip">Btn Outline</span></button><div class="be-sep"></div><button class="be-tool" data-modal="note" title="Note / Info">Note<span class="be-tip">Note</span></button><button class="be-tool" data-modal="alert" title="Alert">Alert<span class="be-tip">Alert</span></button><button class="be-tool" data-modal="table" title="Table">Tbl<span class="be-tip">Table</span></button><button class="be-tool" data-modal="steps" title="Steps">Steps<span class="be-tip">Steps</span></button><button class="be-tool" data-modal="accordion" title="Accordion (Grouped)">Acc<span class="be-tip">Accordion</span></button><button class="be-tool" data-modal="faq" title="FAQ with Schema">FAQ<span class="be-tip">FAQ Schema</span></button><button class="be-tool" data-modal="youtube" title="Lazy YouTube">YT<span class="be-tip">YouTube</span></button><div class="be-sep"></div><button class="be-tool" data-modal="author" title="Author Card">Auth<span class="be-tip">Author Card</span></button><button class="be-tool" data-modal="ppt" title="PPT Slides">PPT<span class="be-tip">PPT</span></button></div><div class="be-editor-wrap"><div class="be-editor" id="be-editor" contenteditable="true" data-placeholder="Start writing… Place cursor where you want the element, then use toolbar." spellcheck="true"></div></div><div class="be-citations"><label>Works Cited (always placed at end of generated HTML)</label><div class="be-cite-editor" id="be-cite" contenteditable="true"></div></div><div class="be-output" id="be-output"><label style="font-size:12px;font-weight:650;color:#64748b;margin-bottom:7px;display:block;">Generated HTML (ready to paste into Blogger)</label><textarea id="be-html" readonly></textarea></div><div class="be-modal-overlay" id="be-modal"><div class="be-modal"><div class="be-modal-header"><h3 id="be-modal-title">Insert</h3><button class="be-modal-close" id="be-modal-close" type="button">&times;</button></div><div class="be-modal-body" id="be-modal-body"></div><div class="be-modal-footer"><button class="be-btn" id="be-modal-cancel" type="button">Cancel</button><button class="be-btn primary" id="be-modal-insert" type="button">Insert</button></div></div></div></div><div class="be-toast" id="be-toast"></div>
+
+<script>(function (){
+'use strict';
+const root = document.getElementById('be-root');
+const editor = document.getElementById('be-editor');
+const titleEl = document.getElementById('be-title');
+const citeEl = document.getElementById('be-cite');
+const outputWrap = document.getElementById('be-output');
+const htmlOut = document.getElementById('be-html');
+const modal = document.getElementById('be-modal');
+const modalBody = document.getElementById('be-modal-body');
+const modalTitle = document.getElementById('be-modal-title');
+const LS_KEY = 'be-blogger-editor-v7';
+let currentModalType = null;
+let pptSlides = [];
+let faqItems = [];
+let savedRange = null;
+function toast(msg){
+const t = document.getElementById('be-toast');
+t.textContent = msg;
+t.classList.add('show');
+setTimeout(() => t.classList.remove('show'), 2300);
+}
+function save(){
+try{
+localStorage.setItem(LS_KEY, JSON.stringify({
+title: titleEl.value,
+html: editor.innerHTML,
+cite: citeEl.innerHTML,
+ts: Date.now()
+}));
+}catch (e){}
+}
+function load(){
+try{
+const raw = localStorage.getItem(LS_KEY);
+if (!raw) return;
+const data = JSON.parse(raw);
+titleEl.value = data.title || '';
+editor.innerHTML = data.html || '';
+citeEl.innerHTML = data.cite || '';
+}catch (e){}
+}
+let saveTimer;
+function scheduleSave(){
+clearTimeout(saveTimer);
+saveTimer = setTimeout(save, 1100);
+}
+editor.addEventListener('input', scheduleSave);
+titleEl.addEventListener('input', scheduleSave);
+citeEl.addEventListener('input', scheduleSave);
+function rememberCursor(){
+const sel = window.getSelection();
+if (sel.rangeCount && editor.contains(sel.anchorNode)){
+savedRange = sel.getRangeAt(0).cloneRange();
+}
+}
+editor.addEventListener('blur', rememberCursor);
+editor.addEventListener('keyup', rememberCursor);
+editor.addEventListener('mouseup', rememberCursor);
+function restoreCursor(){
+if (savedRange){
+const sel = window.getSelection();
+sel.removeAllRanges();
+try{sel.addRange(savedRange);}catch (e){}
+}
+}
+editor.addEventListener('keydown', function (e){
+if (e.key === 'Enter'){
+setTimeout(() =>{
+const sel = window.getSelection();
+if (!sel.rangeCount) return;
+const p = getClosestBlock(sel.getRangeAt(0).startContainer);
+if (p && p.tagName === 'P' && p.classList.contains('pIndent')){
+p.classList.remove('pIndent');
+}
+}, 0);
+}
+if (e.key === 'Backspace'){
+const sel = window.getSelection();
+if (!sel.rangeCount || !sel.isCollapsed) return;
+const range = sel.getRangeAt(0);
+if (range.startOffset === 0){
+const p = getClosestBlock(range.startContainer);
+if (p && p.tagName === 'P' && p.classList.contains('pIndent')){
+e.preventDefault();
+p.classList.remove('pIndent');
+scheduleSave();
+toast('Indent removed');
+}
+}
+}
+});
+root.querySelectorAll('[data-cmd]').forEach(btn =>{
+btn.addEventListener('click', () =>{
+editor.focus();
+restoreCursor();
+document.execCommand(btn.dataset.cmd, false, null);
+scheduleSave();
+});
+});
+root.querySelectorAll('[data-insert]').forEach(btn =>{
+btn.addEventListener('click', () =>{
+const type = btn.dataset.insert;
+editor.focus();
+restoreCursor();
+if (type === 'h2' || type === 'h3'){
+document.execCommand('formatBlock', false, type);
+}else if (type === 'quote'){
+insertHTMLAtCursor(`<blockquote><p>Quote text here…</p><span>Anonymous</span></blockquote><p><br></p>`);
+}else if (type === 'quote1'){
+insertHTMLAtCursor(`<blockquote class="s1"><p>Quote text here…</p><span>Anonymous</span></blockquote><p><br></p>`);
+}else if (type === 'quote2'){
+insertHTMLAtCursor(`<blockquote class="s2"><p>Quote text here…</p><span>Anonymous</span></blockquote><p><br></p>`);
+}else if (type === 'indent'){
+const sel = window.getSelection();
+if (sel.rangeCount){
+const p = getClosestBlock(sel.getRangeAt(0).startContainer);
+if (p && p.tagName === 'P'){
+if (p.classList.contains('pIndent')){
+p.classList.remove('pIndent');
+toast('Indent removed');
+}else{
+p.classList.add('pIndent');
+toast('Paragraph indented');
+}
+}
+}
+}else if (type === 'dropcap'){
+const sel = window.getSelection();
+if (sel.rangeCount){
+const p = getClosestBlock(sel.getRangeAt(0).startContainer);
+if (p && p.tagName === 'P' && p.textContent.trim()){
+const text = p.textContent;
+p.innerHTML = `<span class="dropCap">${text.charAt(0)}</span>${text.slice(1)}`;
+}
+}
+}
+scheduleSave();
+});
+});
+function getClosestBlock(node){
+while (node && node !== editor){
+if (node.nodeType === 1 && /^(P|H2|H3|BLOCKQUOTE|DIV)$/i.test(node.tagName)) return node;
+node = node.parentNode;
+}
+return null;
+}
+function insertHTMLAtCursor(html){
+restoreCursor();
+const sel = window.getSelection();
+if (!sel.rangeCount){
+editor.insertAdjacentHTML('beforeend', html);
+return;
+}
+const range = sel.getRangeAt(0);
+range.deleteContents();
+const temp = document.createElement('div');
+temp.innerHTML = html;
+const frag = document.createDocumentFragment();
+let last = null;
+while (temp.firstChild) last = frag.appendChild(temp.firstChild);
+range.insertNode(frag);
+if (last){
+range.setStartAfter(last);
+range.collapse(true);
+sel.removeAllRanges();
+sel.addRange(range);
+savedRange = range.cloneRange();
+}
+}
+function createBlock(type, liveHTML, dataObj){
+const block = document.createElement('div');
+block.className = 'be-block';
+block.dataset.type = type;
+block.dataset.id = 'beblk-' + Date.now() + Math.random().toString(36).slice(2, 5);
+block.contentEditable = 'false';
+if (dataObj) block.dataset.payload = JSON.stringify(dataObj);
+block.innerHTML = `
+<div class="be-block-controls">
+<button type="button" data-move="up" title="Move up">↑</button>
+<button type="button" data-move="down" title="Move down">↓</button>
+<button type="button" data-del title="Remove">×</button>
+</div>
+<div class="be-block-label">${type.replace(/-/g, ' ')}</div>
+<div class="be-block-live">${liveHTML}</div>
+`;
+return block;
+}
+function insertBlock(block){
+editor.focus();
+restoreCursor();
+const sel = window.getSelection();
+let inserted = false;
+if (sel.rangeCount){
+let range = sel.getRangeAt(0);
+let container = range.commonAncestorContainer;
+if (container.nodeType === 3) container = container.parentNode;
+let topLevel = container;
+while (topLevel && topLevel.parentNode !== editor){
+topLevel = topLevel.parentNode;
+}
+if (topLevel && topLevel !== editor && editor.contains(topLevel)){
+topLevel.after(block);
+inserted = true;
+}
+}
+if (!inserted){
+editor.appendChild(block);
+}
+const p = document.createElement('p');
+p.innerHTML = '<br>';
+block.after(p);
+const newRange = document.createRange();
+newRange.setStart(p, 0);
+newRange.collapse(true);
+sel.removeAllRanges();
+sel.addRange(newRange);
+savedRange = newRange.cloneRange();
+scheduleSave();
+}
+editor.addEventListener('click', function (e){
+const btn = e.target.closest('[data-move], [data-del]');
+if (!btn) return;
+e.preventDefault();
+e.stopPropagation();
+const block = btn.closest('.be-block');
+if (!block || block.parentNode !== editor) return;
+if (btn.hasAttribute('data-del')){
+block.remove();
+scheduleSave();
+return;
+}
+const dir = btn.dataset.move;
+if (dir === 'up'){
+const prev = block.previousElementSibling;
+if (prev){
+editor.insertBefore(block, prev);
+}
+}else if (dir === 'down'){
+const next = block.nextElementSibling;
+if (next){
+next.after(block);
+}
+}
+scheduleSave();
+});
+const modalForms ={
+image:{
+title: 'Standard Image',
+fields: `
+<div class="be-field"><label>Image URL</label><input id="m-src" type="url" placeholder="https://…"></div>
+<div class="be-field"><label>Alt text</label><input id="m-alt" type="text" placeholder="Description"></div>
+<div class="be-field"><label>Width</label><input id="m-w" type="number" value="1280"></div>
+<div class="be-field"><label>Height</label><input id="m-h" type="number" value="720"></div>
+`,
+collect(){
+return{
+src: document.getElementById('m-src').value.trim(),
+alt: document.getElementById('m-alt').value.trim() || 'image',
+w: document.getElementById('m-w').value || 1280,
+h: document.getElementById('m-h').value || 720
+};
+},
+live(d){
+return `<img class="full" alt="${esc(d.alt)}" width="${d.w}" height="${d.h}" src="${esc(d.src)}">`;
+},
+html(d){
+return `<!--[ Standard image ]-->\n<img class='full' alt='${esc(d.alt)}' width='${d.w}' height='${d.h}' src='${esc(d.src)}'/>`;
+}
+},
+gallery:{
+title: 'Images with Show All',
+fields: `
+<div class="be-field"><label>Visible images (one URL per line)</label><textarea id="m-vis" rows="3" placeholder="https://img1…\nhttps://img2…"></textarea></div>
+<div class="be-field"><label>Hidden images (one URL per line)</label><textarea id="m-hid" rows="3"></textarea></div>
+<div class="be-field"><label>Button / cover image URL</label><input id="m-btn" type="url"></div>
+<div class="be-field"><label>Alt for all</label><input id="m-alt" type="text" value="image"></div>
+`,
+collect(){
+return{
+vis: document.getElementById('m-vis').value.trim().split(/\n+/).filter(Boolean),
+hid: document.getElementById('m-hid').value.trim().split(/\n+/).filter(Boolean),
+btn: document.getElementById('m-btn').value.trim(),
+alt: document.getElementById('m-alt').value.trim() || 'image'
+};
+},
+live(d){
+const id = 'hideImg' + Date.now();
+let h = `<input hidden class="inImg" id="${id}" type="checkbox"><div class="psImg hdImg">`;
+d.vis.forEach(u => h += `<img alt="${esc(d.alt)}" src="${esc(u)}">`);
+h += `<div class="btImg"><img alt="${esc(d.alt)}" src="${esc(d.btn || d.vis[0] || '')}"><label for="${id}" aria-label="Show all images">Show All</label></div><div class="psImg shImg">`;
+d.hid.forEach(u => h += `<img alt="${esc(d.alt)}" src="${esc(u)}">`);
+h += `</div></div>`;
+return h;
+},
+html(d){
+const id = 'hideImg' + Date.now();
+let h = `<!--[ Images with Show All Function ]-->\n<input hidden class='inImg' id='${id}' type='checkbox'>\n<div class='psImg hdImg'>\n`;
+d.vis.forEach(u => h += ` <img alt='${esc(d.alt)}' src='${esc(u)}'/>\n`);
+h += ` <div class='btImg'>\n <img alt='${esc(d.alt)}' src='${esc(d.btn || d.vis[0] || '')}'/>\n <label for='${id}' aria-label='Show all images'>Show All</label>\n </div>\n <div class='psImg shImg'>\n`;
+d.hid.forEach(u => h += ` <img alt='${esc(d.alt)}' src='${esc(u)}'/>\n`);
+h += ` </div>\n</div>`;
+return h;
+}
+},
+link:{
+title: 'External Link',
+fields: `
+<div class="be-field"><label>URL</label><input id="m-url" type="url" placeholder="https://…"></div>
+<div class="be-field"><label>Link title</label><input id="m-title" type="text" placeholder="Click here"></div>
+`,
+collect(){
+return{url: document.getElementById('m-url').value.trim(), title: document.getElementById('m-title').value.trim() || 'Link'};
+},
+live(d){return `<a class="extL" href="${esc(d.url)}" rel="nofollow noreferrer noopener" target="_blank">${esc(d.title)}</a>`;},
+html(d){return `<a class='extL' href='${esc(d.url)}' rel='nofollow noreferrer noopener' target='_blank'>${esc(d.title)}</a>`;}
+},
+button:{
+title: 'Button',
+fields: `
+<div class="be-field"><label>URL</label><input id="m-url" type="url"></div>
+<div class="be-field"><label>Label</label><input id="m-title" type="text" value="Click me"></div>
+`,
+collect(){
+return{url: document.getElementById('m-url').value.trim(), title: document.getElementById('m-title').value.trim() || 'Button'};
+},
+live(d){return `<a class="button" href="${esc(d.url)}">${esc(d.title)}</a>`;},
+html(d){return `<!--[ Button ]-->\n<a class='button' href='${esc(d.url)}'>${esc(d.title)}</a>`;}
+},
+buttonln:{
+title: 'Outlined Button',
+fields: `
+<div class="be-field"><label>URL</label><input id="m-url" type="url"></div>
+<div class="be-field"><label>Label</label><input id="m-title" type="text" value="Click me"></div>
+`,
+collect(){
+return{url: document.getElementById('m-url').value.trim(), title: document.getElementById('m-title').value.trim() || 'Button'};
+},
+live(d){return `<a class="button ln" href="${esc(d.url)}">${esc(d.title)}</a>`;},
+html(d){return `<!--[ Button outlined ]-->\n<a class='button ln' href='${esc(d.url)}'>${esc(d.title)}</a>`;}
+},
+note:{
+title: 'Note / Info',
+fields: `
+<div class="be-field"><label>Title</label><input id="m-title" type="text" value="Info!"></div>
+<div class="be-field"><label>Content</label><textarea id="m-txt" rows="3">Your note text…</textarea></div>
+`,
+collect(){
+return{title: document.getElementById('m-title').value.trim(), txt: document.getElementById('m-txt').value.trim()};
+},
+live(d){return `<p class="note"><b>${esc(d.title)}</b><br>${esc(d.txt)}</p>`;},
+html(d){return `<!--[ Note info ]-->\n<p class='note'><b>${esc(d.title)}</b><br/>\n ${esc(d.txt)}\n</p>`;}
+},
+alert:{
+title: 'Alert',
+fields: `
+<div class="be-field"><label>Variant</label>
+<select id="m-var">
+<option value="">Default</option>
+<option value="outline">Outlined</option>
+<option value="info">Info</option>
+</select>
+</div>
+<div class="be-field"><label>Title (optional)</label><input id="m-title" type="text" value="Info!"></div>
+<div class="be-field"><label>Message</label><textarea id="m-txt" rows="2">A simple alert message.</textarea></div>
+`,
+collect(){
+return{
+v: document.getElementById('m-var').value,
+title: document.getElementById('m-title').value.trim(),
+txt: document.getElementById('m-txt').value.trim()
+};
+},
+live(d){
+const cls = d.v ? `alert ${d.v}` : 'alert';
+const tit = d.title ? `<b>${esc(d.title)}</b> ` : '';
+return `<div class="${cls}">${tit}${esc(d.txt)}</div>`;
+},
+html(d){
+const cls = d.v ? `alert ${d.v}` : 'alert';
+const tit = d.title ? `<b>${esc(d.title)}</b>\n ` : '';
+return `<!--[ Alert ]-->\n<div class='${cls}'>${tit}${esc(d.txt)}\n</div>`;
+}
+},
+table:{
+title: 'Table',
+fields: `
+<div class="be-field"><label>Headers (comma separated)</label><input id="m-head" type="text" value="Name, Position, Office"></div>
+<div class="be-field"><label>Rows (one per line, cells comma separated)</label><textarea id="m-rows" rows="5">Tiger Nixon, System Architect, Edinburgh\nGarrett Winters, Accountant, Tokyo</textarea></div>
+`,
+collect(){
+const heads = document.getElementById('m-head').value.split(',').map(s => s.trim()).filter(Boolean);
+const rows = document.getElementById('m-rows').value.trim().split(/\n+/).map(r => r.split(',').map(c => c.trim()));
+return{heads, rows};
+},
+live(d){
+let h = `<div class="table sticky bordered stripped hovered"><table><thead><tr>`;
+d.heads.forEach(th => h += `<th>${esc(th)}</th>`);
+h += `</tr></thead><tbody>`;
+d.rows.forEach(row =>{
+h += `<tr>`;
+row.forEach(td => h += `<td>${esc(td)}</td>`);
+h += `</tr>`;
+});
+h += `</tbody></table></div>`;
+return h;
+},
+html(d){
+let h = `<!--[ Table ]-->\n<div class='table sticky bordered stripped hovered'>\n <table>\n <thead>\n <tr>\n`;
+d.heads.forEach(th => h += ` <th>${esc(th)}</th>\n`);
+h += ` </tr>\n </thead>\n <tbody>\n`;
+d.rows.forEach(row =>{
+h += ` <tr>\n`;
+row.forEach(td => h += ` <td>${esc(td)}</td>\n`);
+h += ` </tr>\n`;
+});
+h += ` </tbody>\n </table>\n</div>`;
+return h;
+}
+},
+steps:{
+title: 'Steps',
+fields: `
+<div class="be-field"><label>Steps (one per line)</label><textarea id="m-steps" rows="5">Step one\nStep two\nStep three</textarea></div>
+`,
+collect(){
+return{steps: document.getElementById('m-steps').value.trim().split(/\n+/).filter(Boolean)};
+},
+live(d){
+let h = `<ol class="steps">`;
+d.steps.forEach(s => h += `<li>${esc(s)}</li>`);
+h += `</ol>`;
+return h;
+},
+html(d){
+let h = `<!--[ Steps ]-->\n<ol class='steps'>\n`;
+d.steps.forEach(s => h += ` <li>${esc(s)}</li>\n`);
+h += `</ol>`;
+return h;
+}
+},
+accordion:{
+title: 'Accordion (Grouped)',
+fields: `
+<div class="be-field">
+<label>Items</label>
+<div class="be-faq-list" id="m-acc-list"></div>
+<button type="button" class="be-btn" id="m-add-acc" style="margin-top:8px">+ Add Item</button>
+</div>
+`,
+onOpen(){
+faqItems = [{q: 'Title here', a: 'text here'}];
+renderAccInputs();
+document.getElementById('m-add-acc').onclick = () =>{
+saveCurrentAccValues();
+faqItems.push({q: '', a: ''});
+renderAccInputs();
+};
+},
+collect(){
+saveCurrentAccValues();
+return{items: faqItems.filter(i => i.q || i.a)};
+},
+live(d){
+let h = '';
+d.items.forEach(i =>{
+h += `<details class="ac"><summary>${esc(i.q)}</summary><div><p>${esc(i.a)}</p></div></details>`;
+});
+return h;
+},
+html(d){
+let h = `<!--[ Accordion (Grouped) ]-->\n<div class='showH'>\n`;
+d.items.forEach(i =>{
+h += ` <details class='ac'>\n <summary>${esc(i.q)}</summary>\n <div>\n <p>${esc(i.a)}</p>\n </div>\n </details>\n`;
+});
+h += `</div>`;
+return h;
+}
+},
+faq:{
+title: 'FAQ (Schema.org FAQPage)',
+fields: `
+<div class="be-field">
+<label>Questions & Answers</label>
+<div class="be-faq-list" id="m-faq-list"></div>
+<button type="button" class="be-btn" id="m-add-faq" style="margin-top:8px">+ Add Question</button>
+</div>
+`,
+onOpen(){
+faqItems = [
+{q: 'Title_here', a: 'text_here'},
+{q: 'Title_here', a: 'text_here'}
+];
+renderFaqInputs();
+document.getElementById('m-add-faq').onclick = () =>{
+saveCurrentFaqValues();
+faqItems.push({q: '', a: ''});
+renderFaqInputs();
+};
+},
+collect(){
+saveCurrentFaqValues();
+return{items: faqItems.filter(i => i.q || i.a)};
+},
+live(d){
+let h = '';
+d.items.forEach(i =>{
+h += `<details class="ac"><summary>${esc(i.q)}</summary><div><p>${esc(i.a)}</p></div></details>`;
+});
+return h + `<p style="font-size:11px;color:#94a3b8;margin-top:6px;">FAQPage schema will be included on Generate</p>`;
+},
+html(d){
+let h = `<!--[ Accordion (FAQPage) ]-->\n<div class='showH' itemscope itemtype='https://schema.org/FAQPage'>\n`;
+d.items.forEach(i =>{
+h += ` <details class='ac' itemscope itemprop='mainEntity' itemtype='https://schema.org/Question'>\n`;
+h += ` <summary itemprop='name'>${esc(i.q)}</summary>\n`;
+h += ` <div itemscope itemprop='acceptedAnswer' itemtype='https://schema.org/Answer'>\n`;
+h += ` <p itemprop='text'>${esc(i.a)}</p>\n`;
+h += ` </div>\n </details>\n`;
+});
+h += `</div>`;
+return h;
+}
+},
+youtube:{
+title: 'Lazy YouTube',
+fields: `
+<div class="be-field"><label>YouTube Video ID</label><input id="m-id" type="text" placeholder="dQw4w9WgXcQ"></div>
+`,
+collect(){
+return{id: document.getElementById('m-id').value.trim()};
+},
+live(d){return `<div class="lazyYt" data-embed="${esc(d.id)}"></div>`;},
+html(d){return `<!--[ Lazy YouTube ]-->\n<div class='lazyYt' data-embed='${esc(d.id)}'></div>`;}
+},
+author:{
+title: 'Author Card',
+fields: `
+<div class="be-field"><label>Image URL</label><input id="m-img" type="url" value="https://blogger.googleusercontent.com/img/a/AVvXsEh_SzaAQi6lfKX55B-t3FHJU31j8AKw2ceJH42XtCyqkWzIG-A9Yxzr2kTaPMNPvmU4B1lSB39Re5VRvdLSzBn4aCbe1alaNKCl99APS6A2JCMpve2akSInjD9k-LjbGdELvPaTHrgqLwMmudri1yOiBRBvaDp1kIfYS6mtxCklzu74JU-2Q2krKbvkZz0=w600-h337-p-k-no-nu-rw-e90"></div>
+<div class="be-field"><label>Name</label><input id="m-name" type="text" value="Mason Carter"></div>
+<div class="be-field"><label>Tagline</label><input id="m-tag" type="text" value="Poet • Author • Professor"></div>
+<div class="be-field"><label>Bio (HTML allowed)</label><textarea id="m-bio" rows="5">Hi, I’m an educator and author with a passion for exploring themes of social justice, autonomy, and the ways communities come together. I studied English Literature at Shah Abdul Latif University and the International Islamic University, where I completed my master’s thesis on communes and utopias in literature. Since 2018, I have been a faculty member in the Department of English Language &amp;Literature at Shah Abdul Latif University. Teaching is one of my biggest joys;it keeps me learning and growing every day. <a href="/p/mason-carter.html">Read full biography →</a></textarea></div>
+<div class="be-field"><label>Newsletter URL</label><input id="m-news" type="url" value="https://books2read.com/author/mason-carter/subscribe/89318/"></div>
+<div class="be-field"><label>Website URL</label><input id="m-web" type="url" value="/p/books-series.html"></div>
+<div class="be-field"><label>Facebook URL</label><input id="m-fb" type="url" value="https://www.facebook.com/MasonCarterAuthor"></div>
+<div class="be-field"><label>X (Twitter) URL</label><input id="m-x" type="url" value="https://x.com/DrMasonCarter"></div>
+<div class="be-field"><label>Instagram URL</label><input id="m-ig" type="url" value="https://www.instagram.com/masoncarterauthor/"></div>
+<div class="be-field"><label>LinkedIn URL</label><input id="m-li" type="url" value="#"></div>
+<div class="be-field"><label>YouTube URL</label><input id="m-yt" type="url" value="https://www.youtube.com/@libertarianmunicipalist"></div>
+`,
+collect(){
+return{
+img: document.getElementById('m-img').value.trim(),
+name: document.getElementById('m-name').value.trim(),
+tag: document.getElementById('m-tag').value.trim(),
+bio: document.getElementById('m-bio').value.trim(),
+news: document.getElementById('m-news').value.trim(),
+web: document.getElementById('m-web').value.trim(),
+fb: document.getElementById('m-fb').value.trim(),
+x: document.getElementById('m-x').value.trim(),
+ig: document.getElementById('m-ig').value.trim(),
+li: document.getElementById('m-li').value.trim(),
+yt: document.getElementById('m-yt').value.trim()
+};
+},
+live(d){
+return `<div class="mc-about-card">
+<div class="mc-about-left">
+<img class="mc-about-img" src="${esc(d.img)}" alt="Portrait of ${esc(d.name)}" />
+<a class="mc-newsletter-btn" href="${esc(d.news)}" target="_blank">Join Newsletter</a>
+</div>
+<div class="mc-about-text">
+<h2>About ${esc(d.name)}</h2>
+<p class="mc-tagline">${esc(d.tag)}</p>
+<p>${d.bio}</p>
+<div class="Label-1">
+<a href="${esc(d.web)}" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 9h-3.05a15.9 15.9 0 00-1.19-5.02A8.02 8.02 0 0118.93 11zM12 4c.83 0 2.18 2.09 2.76 7H9.24C9.82 6.09 11.17 4 12 4zM9.31 5.98A15.9 15.9 0 008.12 11H5.07a8.02 8.02 0 014.24-5.02zM4.07 13h3.05a15.9 15.9 0 001.19 5.02A8.02 8.02 0 014.07 13zM12 20c-.83 0-2.18-2.09-2.76-7h5.52C14.18 17.91 12.83 20 12 20zm2.69-1.98A15.9 15.9 0 0015.88 13h3.05a8.02 8.02 0 01-4.24 5.02z"/></svg></a>
+<a href="${esc(d.fb)}" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12A10 10 0 1010.44 21.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.89h-2.32v6.99A10 10 0 0022 12z"/></svg></a>
+<a href="${esc(d.x)}" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.76 7.73L23 22h-6.1l-4.77-6.23L6.7 22H3.6l7.23-8.26L1 2h6.25l4.31 5.67L18.9 2z"/></svg></a>
+<a href="${esc(d.ig)}" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6-1.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></svg></a>
+<a href="${esc(d.li)}" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.48 2.48 0 102.5 6a2.48 2.48 0 002.48-2.5zM3 8h4v13H3zm7 0h3.8v1.8h.1c.53-1 1.84-2.1 3.8-2.1 4.07 0 4.8 2.68 4.8 6.16V21h-4v-6c0-1.43-.03-3.27-2-3.27s-2.3 1.56-2.3 3.16V21h-4z"/></svg></a>
+<a href="${esc(d.yt)}" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.7 15.5v-7L16 12l-6.3 3.5z"/></svg></a>
+</div>
+</div>
+</div>`;
+},
+html(d){
+return `<!--[ Author Card ]-->
+<section class="mc-main">
+<div class="mc-about-card">
+<div class="mc-about-left">
+<img class="mc-about-img" src="${esc(d.img)}" alt="Portrait of ${esc(d.name)}" />
+<a class="mc-newsletter-btn" href="${esc(d.news)}" target="_blank">Join Newsletter</a>
+</div>
+<div class="mc-about-text">
+<h2>About ${esc(d.name)}</h2>
+<p class="mc-tagline">${esc(d.tag)}</p>
+<p>${d.bio}</p>
+<div class="Label-1">
+<a href="${esc(d.web)}" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 9h-3.05a15.9 15.9 0 00-1.19-5.02A8.02 8.02 0 0118.93 11zM12 4c.83 0 2.18 2.09 2.76 7H9.24C9.82 6.09 11.17 4 12 4zM9.31 5.98A15.9 15.9 0 008.12 11H5.07a8.02 8.02 0 014.24-5.02zM4.07 13h3.05a15.9 15.9 0 001.19 5.02A8.02 8.02 0 014.07 13zM12 20c-.83 0-2.18-2.09-2.76-7h5.52C14.18 17.91 12.83 20 12 20zm2.69-1.98A15.9 15.9 0 0015.88 13h3.05a8.02 8.02 0 01-4.24 5.02z"/></svg></a>
+<a href="${esc(d.fb)}" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12A10 10 0 1010.44 21.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.25c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.89h-2.32v6.99A10 10 0 0022 12z"/></svg></a>
+<a href="${esc(d.x)}" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.76 7.73L23 22h-6.1l-4.77-6.23L6.7 22H3.6l7.23-8.26L1 2h6.25l4.31 5.67L18.9 2z"/></svg></a>
+<a href="${esc(d.ig)}" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5a5 5 0 110 10 5 5 0 010-10zm6-1.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z"/></svg></a>
+<a href="${esc(d.li)}" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.48 2.48 0 102.5 6a2.48 2.48 0 002.48-2.5zM3 8h4v13H3zm7 0h3.8v1.8h.1c.53-1 1.84-2.1 3.8-2.1 4.07 0 4.8 2.68 4.8 6.16V21h-4v-6c0-1.43-.03-3.27-2-3.27s-2.3 1.56-2.3 3.16V21h-4z"/></svg></a>
+<a href="${esc(d.yt)}" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 00.5 6.2 31 31 0 000 12a31 31 0 00.5 5.8 3 3 0 002.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 002.1-2.1A31 31 0 0024 12a31 31 0 00-.5-5.8zM9.7 15.5v-7L16 12l-6.3 3.5z"/></svg></a>
+</div>
+</div>
+</div>
+</section>
+<style>.mc-main{max-width:980px;margin:90px auto}.mc-about-card{display:flex;gap:30px;align-items:flex-start;background:#fff;padding:28px;border-radius:18px;box-shadow:0 6px 18px rgba(0,0,0,.06)}.mc-about-left{display:flex;flex-direction:column;align-items:center;gap:16px;flex-shrink:0}.mc-about-left img.mc-about-img{display:block!important;width:120px!important;height:120px!important;min-width:120px!important;min-height:120px!important;max-width:120px!important;max-height:120px!important;border-radius:50%!important;object-fit:cover!important;object-position:center!important;overflow:hidden!important;aspect-ratio:1/1!important}.mc-about-text{flex:1}.mc-about-text h2{font:700 1.6rem "Playfair Display",serif;color:#111;margin-bottom:2px}.mc-tagline{margin:0 0 18px;font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#888}.mc-about-text p{font-size:.94rem;line-height:1.8;color:#444}.mc-about-text a{color:#6b48ff;font-weight:600}.mc-about-text a:hover{text-decoration:underline}.mc-newsletter-btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 24px;background:#fff;color:#222!important;border:1px solid #d9d9d9;border-radius:999px;font-size:.77rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 2px 8px rgba(0,0,0,.05);width:100%;max-width:190px}.mc-newsletter-btn:hover{background:#f7f7f7;border-color:#bdbdbd;transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.08)}.Label-1{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;padding:0;align-items:center}.Label-1 a{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(155,170,175,.12);color:#555}.Label-1 a:hover{background:#0b57cf;color:#fff;transform:translateY(-2px)}.Label-1 svg{width:19px;height:19px;display:block;fill:currentColor}@media(max-width:768px){.mc-main{margin:70px auto}.mc-about-card{flex-direction:column;align-items:center;text-align:center;padding:22px}.mc-about-text{text-align:left;width:100%}.mc-about-left img.mc-about-img{width:96px!important;height:96px!important;min-width:96px!important;min-height:96px!important;max-width:96px!important;max-height:96px!important}.mc-newsletter-btn{max-width:220px}}</style>`;
+}
+},
+ppt:{
+title: 'PPT / Carousel Slides',
+fields: `
+<div class="be-field">
+<label>Slides</label>
+<div class="be-slide-list" id="m-slides"></div>
+<button type="button" class="be-btn" id="m-add-slide" style="margin-top:8px">+ Add Slide</button>
+</div>
+`,
+onOpen(){
+pptSlides = [{src: '', alt: ''}];
+renderSlideInputs();
+document.getElementById('m-add-slide').onclick = () =>{
+saveCurrentSlideValues();
+pptSlides.push({src: '', alt: ''});
+renderSlideInputs();
+};
+},
+collect(){
+saveCurrentSlideValues();
+return{slides: pptSlides.filter(s => s.src)};
+},
+live(d){
+if (!d.slides.length) return '<p style="color:#94a3b8">No slides</p>';
+let h = `<div class="be-ppt-preview">`;
+d.slides.forEach((s, i) =>{
+h += `<div class="slide">
+<img alt="${esc(s.alt)}" src="${esc(s.src)}" onerror="this.style.background='#e2e8f0'">
+<span>Slide ${i + 1}${s.alt ? ': ' + esc(s.alt) : ''}</span>
+</div>`;
+});
+h += `</div><p style="font-size:12px;color:#64748b;margin-top:6px;">${d.slides.length}slide(s) – full carousel on Generate</p>`;
+return h;
+},
+html(d){
+if (!d.slides.length) return '';
+let slidesHTML = '';
+d.slides.forEach((s, i) =>{
+slidesHTML += `
+<!--[Slide # ${i + 1}]-->
+<div class="f-carousel__slide" data-thumb-src="${esc(s.src)}">
+<img alt="${esc(s.alt)}" data-fancybox="gallery" data-lazy-src="${esc(s.src)}" />
+</div>`;
+});
+return `<!--[ PPT Slides ]-->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"><\/script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"><\/script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"><\/script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css"/>
+<style>
+.f-modern-thumbs__track{box-shadow:0 6px 12px rgba(0,0,0,.5);border:2px solid black}
+.fancybox-bg{background:white;backdrop-filter:blur(100px);opacity:1}
+img{max-width:100%;height:auto}
+#myCarousel{max-width:640px;margin:auto}
+#myCarousel .f-carousel__slide{display:flex;justify-content:center;align-items:center}
+.f-carousel{--f-button-width:38px;--f-button-height:38px;--f-button-svg-width:16px;--f-button-svg-height:16px;--f-button-svg-stroke-width:2.5;--f-button-color:rgb(71 85 105);--f-button-border-radius:50%;--f-button-shadow:0 6px 12px -2px rgb(50 50 93 / 25%),0 3px 7px -3px rgb(0 0 0 / 30%);--f-button-bg:#fff;--f-button-hover-bg:#f9f9f9;--f-button-active-bg:#f0f0f0}
+</style>
+<div>
+<div class="f-carousel" id="myCarousel">
+${slidesHTML}
+</div>
+</div>
+<script>
+new Carousel(document.getElementById("myCarousel"),{Dots:false},{Thumbs});
+<\/script>
+<script>
+Fancybox.bind('[data-fancybox="gallery"]',{});
+<\/script>`;
+}
+}
+};
+function saveCurrentSlideValues(){
+const items = document.querySelectorAll('#m-slides .be-slide-item');
+pptSlides = [];
+items.forEach(row =>{
+const src = row.querySelector('[data-src]')?.value.trim() || '';
+const alt = row.querySelector('[data-alt]')?.value.trim() || '';
+pptSlides.push({src, alt});
+});
+}
+function renderSlideInputs(){
+const list = document.getElementById('m-slides');
+if (!list) return;
+list.innerHTML = '';
+pptSlides.forEach((s, i) =>{
+const row = document.createElement('div');
+row.className = 'be-slide-item';
+row.innerHTML = `
+<input data-src type="url" placeholder="Image URL" value="${escAttr(s.src)}">
+<input data-alt type="text" placeholder="Alt text" value="${escAttr(s.alt)}" style="max-width:120px">
+<button type="button" data-rm title="Remove">×</button>
+`;
+row.querySelector('[data-rm]').onclick = () =>{
+saveCurrentSlideValues();
+pptSlides.splice(i, 1);
+if (pptSlides.length === 0) pptSlides.push({src: '', alt: ''});
+renderSlideInputs();
+};
+list.appendChild(row);
+});
+}
+function saveCurrentFaqValues(){
+const items = document.querySelectorAll('#m-faq-list .be-faq-item');
+faqItems = [];
+items.forEach(row =>{
+const q = row.querySelector('[data-q]')?.value.trim() || '';
+const a = row.querySelector('[data-a]')?.value.trim() || '';
+faqItems.push({q, a});
+});
+}
+function saveCurrentAccValues(){
+const items = document.querySelectorAll('#m-acc-list .be-faq-item');
+faqItems = [];
+items.forEach(row =>{
+const q = row.querySelector('[data-q]')?.value.trim() || '';
+const a = row.querySelector('[data-a]')?.value.trim() || '';
+faqItems.push({q, a});
+});
+}
+function renderFaqInputs(){
+const list = document.getElementById('m-faq-list');
+if (!list) return;
+list.innerHTML = '';
+faqItems.forEach((item, i) =>{
+const row = document.createElement('div');
+row.className = 'be-faq-item';
+row.innerHTML = `
+<input class="be-faq-q" data-q type="text" placeholder="Question" value="${escAttr(item.q)}">
+<textarea class="be-faq-a" data-a placeholder="Answer">${escAttr(item.a)}</textarea>
+<button type="button" data-rm title="Remove">×</button>
+`;
+row.querySelector('[data-rm]').onclick = () =>{
+saveCurrentFaqValues();
+faqItems.splice(i, 1);
+if (faqItems.length === 0) faqItems.push({q: '', a: ''});
+renderFaqInputs();
+};
+list.appendChild(row);
+});
+}
+function renderAccInputs(){
+const list = document.getElementById('m-acc-list');
+if (!list) return;
+list.innerHTML = '';
+faqItems.forEach((item, i) =>{
+const row = document.createElement('div');
+row.className = 'be-faq-item';
+row.innerHTML = `
+<input class="be-faq-q" data-q type="text" placeholder="Title" value="${escAttr(item.q)}">
+<textarea class="be-faq-a" data-a placeholder="Content">${escAttr(item.a)}</textarea>
+<button type="button" data-rm title="Remove">×</button>
+`;
+row.querySelector('[data-rm]').onclick = () =>{
+saveCurrentAccValues();
+faqItems.splice(i, 1);
+if (faqItems.length === 0) faqItems.push({q: '', a: ''});
+renderAccInputs();
+};
+list.appendChild(row);
+});
+}
+function esc(str){
+return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function escAttr(str){
+return String(str || '').replace(/"/g, '&quot;');
+}
+root.querySelectorAll('[data-modal]').forEach(btn =>{
+btn.addEventListener('click', () =>{
+rememberCursor();
+const type = btn.dataset.modal;
+const conf = modalForms[type];
+if (!conf) return;
+currentModalType = type;
+modalTitle.textContent = conf.title;
+modalBody.innerHTML = conf.fields;
+if (conf.onOpen) conf.onOpen();
+modal.classList.add('open');
+});
+});
+document.getElementById('be-modal-close').onclick =
+document.getElementById('be-modal-cancel').onclick = () =>{
+modal.classList.remove('open');
+currentModalType = null;
+};
+document.getElementById('be-modal-insert').onclick = function (){
+if (!currentModalType) return;
+const conf = modalForms[currentModalType];
+if (!conf) return;
+const data = conf.collect();
+if (currentModalType === 'image' && !data.src){toast('Image URL required');return;}
+if (currentModalType === 'link' && !data.url){toast('URL required');return;}
+if (currentModalType === 'youtube' && !data.id){toast('Video ID required');return;}
+if (currentModalType === 'ppt' && (!data.slides || !data.slides.length)){toast('Add at least one slide');return;}
+if ((currentModalType === 'faq' || currentModalType === 'accordion') && (!data.items || !data.items.length)){
+toast('Add at least one item');return;
+}
+const liveHTML = conf.live(data);
+const block = createBlock(currentModalType, liveHTML, data);
+insertBlock(block);
+modal.classList.remove('open');
+currentModalType = null;
+toast('Inserted at cursor');
+};
+function generate(){
+let out = '';
+const t = titleEl.value.trim();
+if (t) out += `<h1>${esc(t)}</h1>\n`;
+Array.from(editor.childNodes).forEach(node =>{
+if (node.nodeType === 3){
+const txt = node.textContent.trim();
+if (txt) out += `<p>${esc(txt)}</p>\n`;
+return;
+}
+if (node.nodeType !== 1) return;
+if (node.classList && node.classList.contains('be-block')){
+const type = node.dataset.type;
+let payload ={};
+try{payload = JSON.parse(node.dataset.payload || '{}');}catch (e){}
+const conf = modalForms[type];
+if (conf && conf.html) out += conf.html(payload) + '\n';
+return;
+}
+const clone = node.cloneNode(true);
+clone.querySelectorAll('[class*="be-"], [data-move], [data-del], .be-block-controls, .be-block-label').forEach(el => el.remove());
+if (clone.tagName === 'DIV' && !clone.className){
+out += `<p>${clone.innerHTML}</p>\n`;
+}else{
+out += clone.outerHTML + '\n';
+}
+});
+const cite = citeEl.innerText.trim();
+if (cite){
+out += `<!--[ Post Works Cited ]-->\n<p class='pRef'>Works Cited:<br>\n${esc(cite).replace(/\n/g, '<br>\n')}\n</p>\n`;
+}
+out = out.replace(/<p><br\s*\/?><\/p>/gi, '').replace(/\n{3,}/g, '\n\n');
+htmlOut.value = out.trim();
+outputWrap.classList.add('show');
+document.getElementById('be-copy').style.display = 'inline-flex';
+toast('Clean HTML generated');
+}
+document.getElementById('be-generate').onclick = generate;
+document.getElementById('be-copy').onclick = () =>{
+htmlOut.select();
+navigator.clipboard.writeText(htmlOut.value).then(() => toast('Copied!'));
+};
+document.getElementById('be-reset').onclick = () =>{
+if (!confirm('Reset the entire editor and clear saved progress?')) return;
+titleEl.value = '';
+editor.innerHTML = '';
+citeEl.innerHTML = '';
+htmlOut.value = '';
+outputWrap.classList.remove('show');
+document.getElementById('be-copy').style.display = 'none';
+localStorage.removeItem(LS_KEY);
+toast('Editor reset');
+};
+document.getElementById('be-fs').onclick = () =>{
+root.classList.toggle('be-fullscreen');
+const isFs = root.classList.contains('be-fullscreen');
+document.getElementById('be-fs').innerHTML = isFs
+? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v3a2 2 0 01-2 2H3m18 0h-3a2 2 0 01-2-2V3m0 18v-3a2 2 0 012-2h3M3 16h3a2 2 0 012 2v3"/></svg> Exit`
+: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/></svg> Full`;
+};
+load();
+if (!editor.innerHTML.trim()) editor.innerHTML = '<p><br></p>';
+})();</script>
+
+    <div class="footer-note">
+      <a href="mailto:mushahidsyed1994.guestposting@blogger.com" class="button ln">Email Us</a><br>
+      <p class="alert outline">Email the generated HTML code to: <strong>mushahidsyed1994.guestposting@blogger.com</strong></p>
+      <p style="margin-top:16px;font-size:0.85rem;color:#94a3b8;">Self-contained editor · Works offline after first load · Progress auto-saved in your browser</p>
+    </div>
+  </div>
+</body>
+</html>
